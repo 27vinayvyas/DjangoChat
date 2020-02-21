@@ -20,6 +20,9 @@ def signup(request):
     else:
         form=UserCreationForm()
     return render(request,'registration/signup.html',{'form':form})
+
+
+
 @login_required
 def secret_page(request):
     return render(request,'secret_page.html')

@@ -20,7 +20,7 @@ from django.contrib import admin
 from core import views
 
 urlpatterns = [
-    path('chat/', include('chat.urls')),
+    path('chat/', include('chat.urls'),name='chat'),
     path('',views.home,name='home'),
     path('signup/',views.signup,name='signup'),
     path('secret/',views.secret_page,name='secret'),
